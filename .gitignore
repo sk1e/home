@@ -1,0 +1,9 @@
+*
+!.gitignore
+!.bashrc
+!.profile
+!.bash_aliases
+!.emacs
+!.goldendict
+!.goldendict/*
+.goldendict/history

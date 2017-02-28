@@ -1,0 +1,146 @@
+/* html */
+/* { */
+/*   background-color: red; */
+/* } */
+
+body
+{
+  background: #181818;
+  font-size: 16px;
+}
+
+.gdarticle
+{
+  background: #181818;
+}
+
+
+.gddictname
+{
+  border: 1px dotted black; padding: 0.2em; padding-left: 0.5em;
+  margin-top: 1.2em; margin-bottom: 0.1em; font-weight: bold; font-size: 14px;
+  color: #C1CDCD;
+}
+
+}
+
+.gdarticleseparator
+{
+  color #C1CDCD
+}
+
+.dsl_u
+{
+  text-decoration: underline;
+  color: #C1CDCD
+
+}
+.dsl_article font[color=c_default_color]
+{
+  color: green;
+}
+
+.dsl_m1
+{
+  padding-left: 9px;
+  color: #C1CDCD
+}
+
+.dsl_m2
+{
+  padding-left: 18px;
+  color: #C1CDCD
+}
+
+.dsl_m3
+{
+  padding-left: 27px;
+  color: #C1CDCD
+}
+
+.dsl_m4
+{
+  padding-left: 36px;
+  color: #C1CDCD
+}
+
+.dsl_m5
+{
+  padding-left: 45px;
+  color: #C1CDCD
+}
+
+.dsl_m6
+{
+  padding-left: 54px;
+  color: #C1CDCD
+}
+
+.dsl_m7
+{
+  padding-left: 63px;
+  color: #C1CDCD
+}
+
+.dsl_m8
+{
+  padding-left: 72px;
+  color: #C1CDCD
+}
+
+.dsl_m9
+{
+  padding-left: 81px;
+  color: #C1CDCD
+}
+
+.dsl_ex
+{
+  color: gray;
+}
+
+.dsl_p
+{
+  color: green;
+  font-style: italic;
+  cursor: default;
+
+}
+
+.dsl_stress_without_accent {
+  display: none;
+  color: #C1CDCD
+}
+
+.dsl_t
+{
+  font-weight: bold;
+  color: #C1CDCD
+}
+
+.dsl_ref
+{
+  color: #1E90FF
+}
+
+.dsl_headwords
+{
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #C1CDCD
+}
+
+.dsl_headwords p
+{
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+  color: #C1CDCD
+}
+
+.dsl_definition p
+{
+  margin: 0;
+  color: #C1CDCD
+}

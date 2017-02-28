@@ -1,0 +1,27 @@
+MainWindow #searchPane #translateLine[currentGroup="all"], MainWindow #searchPane #wordList[currentGroup="all"]
+{
+  background: #181818;
+  color: #C1CDCD;
+  font-size: 15px;
+}
+
+MainWindow #dictsPane #dictsList {
+   background: 181818;
+   color: #C1CDCD;
+}
+
+MainWindow #historyPane #historyList {
+  font-weight: bold;
+  background: #181818;
+  color: #C1CDCD;
+}
+
+
+/* MainWindow #historyPane #historyList::item { */
+/*   background: #181818; */
+/*   color: yellow; */
+/* } */
+
+/* MainWindow #historyPane #historyList::item:selected { */
+/*   background: gray; */
+/* } */
