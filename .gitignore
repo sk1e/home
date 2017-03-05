@@ -6,4 +6,6 @@
 !.emacs
 !.goldendict
 !.goldendict/*
+!.emacs.d
+!.emacs.d/Cask
 .goldendict/history
