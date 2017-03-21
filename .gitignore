@@ -1,0 +1,14 @@
+*
+!.gitignore
+!.bashrc
+!.profile
+!.bash_aliases
+!.emacs
+!.goldendict
+!.goldendict/*
+!.emacs.d
+!.emacs.d/Cask
+!.emacs.d/snippets
+!.emacs.d/snippets/web-mode
+!.emacs.d/snippets/web-mode/*
+.goldendict/history

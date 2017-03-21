@@ -1,0 +1,41 @@
+# -*- mode: snippet -*-
+# name: sscont
+# key: sscont
+# --
+import * as React from 'react';
+import * as block from 'bem-cn'
+import { connect, Dispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+import { IAppReduxState } from 'shared/types/app';
+import actions from '../../../redux/actions';
+import './`(buffer-file-name/no-extension)`.styl';
+
+interface IStateProps {
+}
+
+interface IDispatchProps {
+}
+
+type IProps = IStateProps & IDispatchProps;
+
+
+function mapDispatchToProps(dispatch: Dispatch<any>): IDispatchProps {
+  return bindActionCreators(actions, dispatch);
+}
+
+function mapStateToProps({ confirmPhone }: IAppReduxState): IStateProps {
+  return {
+  };
+}
+
+class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps, {}> {
+  public render(): {
+  
+  }
+}
+
+const `(buffer-file-name/no-extension)`Container = connect<IStateProps, IDispatchProps, {}>
+  (mapStateToProps, mapDispatchToProps)(`(buffer-file-name/no-extension)`);
+
+export default `(buffer-file-name/no-extension)`Container;
