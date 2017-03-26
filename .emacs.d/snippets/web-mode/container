@@ -3,7 +3,7 @@
 # key: sscont
 # --
 import * as React from 'react';
-import * as block from 'bem-cn'
+import block = require('bem-cn')
 import { connect, Dispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -20,22 +20,24 @@ interface IDispatchProps {
 type IProps = IStateProps & IDispatchProps;
 
 
-function mapDispatchToProps(dispatch: Dispatch<any>): IDispatchProps {
+function mapDispatch(dispatch: Dispatch<any>): IDispatchProps {
   return bindActionCreators(actions, dispatch);
 }
 
-function mapStateToProps({ confirmPhone }: IAppReduxState): IStateProps {
+function mapState({ confirmPhone }: IAppReduxState): IStateProps {
   return {
   };
 }
 
+const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`')
+
 class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps, {}> {
-  public render(): {
+  public render() {
   
   }
 }
 
 const `(buffer-file-name/no-extension)`Container = connect<IStateProps, IDispatchProps, {}>
-  (mapStateToProps, mapDispatchToProps)(`(buffer-file-name/no-extension)`);
+  (mapState, mapDispatch)(`(buffer-file-name/no-extension)`);
 
 export default `(buffer-file-name/no-extension)`Container;

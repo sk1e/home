@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: sscomp
+# key: sscomp
+# --
+import * as React from 'react';
+import block = require('bem-cn');
+
+import './`(buffer-file-name/no-extension)`.styl';
+
+interface IProps {
+}
+
+const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`')
+
+class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps, {}> {
+  public render() {
+  
+  }
+}
+
+export default `(buffer-file-name/no-extension)`Container;
+

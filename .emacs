@@ -13,6 +13,9 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+ '(company-dabbrev-code-modes
+   (quote
+    (prog-mode batch-file-mode csharp-mode css-mode erlang-mode haskell-mode jde-mode lua-mode python-mode web-mode typescript-mode)))
  '(company-dabbrev-downcase nil)
  '(company-idle-delay 0)
  '(cursor-in-non-selected-windows nil)
@@ -45,7 +48,8 @@
  '(web-mode-attr-indent-offset 2)
  '(web-mode-code-indent-offset 2)
  '(web-mode-enable-auto-quoting nil)
- '(web-mode-markup-indent-offset 2))
+ '(web-mode-markup-indent-offset 2)
+ '(yas-snippet-dirs (quote ("/home/kotik/.emacs.d/snippets"))))
 
 
 
