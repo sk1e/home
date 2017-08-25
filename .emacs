@@ -30,6 +30,9 @@
  '(js2-indent-switch-body t)
  '(js2-strict-trailing-comma-warning nil)
  '(nyan-bar-length 25)
+ '(package-selected-packages
+   (quote
+    (ivy-gitlab gitlab counsel swiper ivy package-build shut-up epl git commander f dash s)))
  '(py-python-command "python")
  '(py-shell-name "python3")
  '(python-indent-offset 4)
