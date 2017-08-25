@@ -18,5 +18,5 @@ class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps, {}> 
   }
 }
 
-export default `(buffer-file-name/no-extension)`Container;
+export default `(buffer-file-name/no-extension)`;
 
