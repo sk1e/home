@@ -18,6 +18,7 @@
     (prog-mode batch-file-mode csharp-mode css-mode erlang-mode haskell-mode jde-mode lua-mode python-mode web-mode typescript-mode)))
  '(company-dabbrev-downcase nil)
  '(company-idle-delay 0)
+ '(css-indent-offset 2)
  '(cursor-in-non-selected-windows nil)
  '(custom-safe-themes
    (quote
@@ -32,7 +33,7 @@
  '(nyan-bar-length 25)
  '(package-selected-packages
    (quote
-    (ivy-gitlab gitlab counsel swiper ivy package-build shut-up epl git commander f dash s)))
+    (counsel-bbdb ivy-gitlab gitlab counsel swiper ivy package-build shut-up epl git commander f dash s)))
  '(py-python-command "python")
  '(py-shell-name "python3")
  '(python-indent-offset 4)

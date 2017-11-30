@@ -9,7 +9,7 @@ import { bindActionCreators } from 'redux';
 
 import { IAppReduxState } from 'shared/types/app';
 import actions from '../../../redux/actions';
-import './`(buffer-file-name/no-extension)`.styl';
+import './`(buffer-file-name/no-extension)`.scss;
 
 interface IStateProps {
 }
@@ -24,14 +24,14 @@ function mapDispatch(dispatch: Dispatch<any>): IDispatchProps {
   return bindActionCreators(actions, dispatch);
 }
 
-function mapState({ confirmPhone }: IAppReduxState): IStateProps {
+function mapState(state: IAppReduxState): IStateProps {
   return {
   };
 }
 
 const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`')
 
-class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps, {}> {
+class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
   public render() {
   
   }
