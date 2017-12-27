@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ss-set-state-prev
+# key: ss-set-state-prev
+# --
+this.setState((prevState: IState): Partial<IState> => ({$0}));

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ss-set-state
+# key: ss-set-state
+# --
+this.setState((): Partial<IState> => ({$0}));
