@@ -10,7 +10,7 @@ import './`(buffer-file-name/no-extension)`.scss';
 interface IProps {
 }
 
-const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`')
+const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`');
 
 class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
   public render() {
