@@ -35,3 +35,4 @@
 (depends-on "elixir-mode")
 (depends-on "alchemist")
 (depends-on "tco")
+(depends-on "rainbow-mode")
