@@ -11,4 +11,6 @@
 !.emacs.d/snippets
 !.emacs.d/snippets/web-mode
 !.emacs.d/snippets/web-mode/*
+!.emacs.d/snippets/typescript-mode
+!.emacs.d/snippets/typescript-mode/*
 .goldendict/history
