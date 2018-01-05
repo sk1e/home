@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: sscomm-reducer
+# key: sscomm-reducer
+# --
+
+${1:$(s-lower-camel-case yas-text)}: makeCommunicationReducer<NS.I${1:ActionName}, NS.I$1Completed, NS.I$1Fail>(
+  '${1:$(yas:get-action-type yas-text)}',
+  '${1:$(yas:get-action-type yas-text)}_COMPLETED',
+  '${1:$(yas:get-action-type yas-text)}_FAIL',
+  initial.communications.${1:$(s-lower-camel-case yas-text)},
+),

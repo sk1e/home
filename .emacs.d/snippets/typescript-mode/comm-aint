@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: sscomm-aint
+# key: sscomm-aint
+
+# --
+
+export type I${1:ActionName} = I${2:Plain}Action<'${1:$(yas:get-action-type yas-text)}'${3:, ${4:PayloadType}}>;
+export type I$1Completed = I${5:Plain}Action<'${1:$(yas:get-action-type yas-text)}_COMPLETED'${6:, ${7:PayloadType}}>;
+export type I$1Fail = IPlainFailAction<'${1:$(yas:get-action-type yas-text)}_FAIL'>;

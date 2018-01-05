@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: sscomm-ac
+# key: sscomm-ac
+# --
+
+export const { execute: ${1:$(s-lower-camel-case yas-text)}, completed: ${1:$(s-lower-camel-case yas-text)}Completed, failed: ${1:$(s-lower-camel-case yas-text)}Fail } =
+  makeCommunicationActionCreators<NS.I${1:ActionName}, NS.I$1, NS.I$1>(
+    '${1:$(yas:get-action-type yas-text)}', '${1:$(yas:get-action-type yas-text)}_COMPLETED', '${1:$(yas:get-action-type yas-text)}_FAIL',
+  );
