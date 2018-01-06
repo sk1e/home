@@ -36,3 +36,4 @@
 (depends-on "alchemist")
 (depends-on "tco")
 (depends-on "rainbow-mode")
+(depends-on "expand-region")
