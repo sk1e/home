@@ -1,0 +1,48 @@
+# -*- mode: snippet -*-
+# name: sscont-i18n
+# key: sscont-i18n
+# --
+import * as React from 'react';
+import block = require('bem-cn');
+import { connect, Dispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+// import { IAppReduxState } from 'shared/types/app';
+import { ITranslateProps, i18nConnect } from 'services/i18n';
+
+import { actions } from '../../../redux';
+import './`(buffer-file-name/no-extension)`.scss';
+
+// interface IStateProps {
+// }
+
+interface IDispatchProps {
+}
+
+type IProps = IDispatchProps & ITranslateProps;
+
+function mapDispatch(dispatch: Dispatch<any>): IDispatchProps {
+  return bindActionCreators(actions, dispatch);
+}
+
+// function mapState(state: IAppReduxState): IStateProps {
+//  return {
+//  };
+// }
+
+const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`');
+
+class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
+  public render() {
+    return (
+      <div className={b()}>
+        $0
+      </div>
+    );
+  }
+}
+
+const `(buffer-file-name/no-extension)`Container = connect<{}, IDispatchProps, {}>
+  (null, mapDispatch)(`(buffer-file-name/no-extension)`);
+
+export default i18nConnect(`(buffer-file-name/no-extension)`Container);
