@@ -1,0 +1,61 @@
+# -*- mode: snippet -*-
+# name: sscont-form
+# key: sscont-form
+# --
+import * as React from 'react';
+import block = require('bem-cn');
+import { connect, Dispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { Field, reduxForm, InjectedFormProps, WrappedFieldProps } from 'redux-form';
+import { bind } from 'decko';
+
+import { IAppReduxState } from 'shared/types/app';
+import { IInputProps } from 'shared/view/elements';
+
+import { ${1:formEntry} } from '../../../redux/reduxFormEntries';
+import { actions } from '../../../redux';
+import { ${2:IFormData} } from '../../../namespace'
+import './`(buffer-file-name/no-extension)`.scss';
+
+interface IStateProps {
+}
+
+interface IDispatchProps {
+}
+
+interface IOwnProps {
+}
+
+type IProps = IStateProps & IDispatchProps & InjectedFormProps<$2, IOwnProps> & IOwnProps;
+
+
+function mapDispatch(dispatch: Dispatch<any>): IDispatchProps {
+  return bindActionCreators(actions, dispatch);
+}
+
+function mapState(state: IAppReduxState): IStateProps {
+  return {
+  };
+}
+
+const { name: formName, fieldNames } = $1;
+
+const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`');
+
+const FormField = Field as new () => Field<Omit<IInputProps, 'value'>>;
+
+class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
+  public render() {
+    return (
+      <div className={b()}>
+        $0
+      </div>
+    );
+  }
+}
+
+const `(buffer-file-name/no-extension)`Container = connect<IStateProps, IDispatchProps, {}>
+  (mapState, mapDispatch)(`(buffer-file-name/no-extension)`);
+
+const withConnectedForm = reduxForm({ form: formName })(`(buffer-file-name/no-extension)`Container);
+export default withConnectedForm;
