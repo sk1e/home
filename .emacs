@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -26,6 +25,7 @@
  '(display-time-default-load-average nil)
  '(ede-project-directories (quote ("/home/kotik/Projects")))
  '(frame-background-mode (quote dark))
+ '(js-indent-level 2)
  '(js-switch-indent-offset 2)
  '(js2-basic-offset 2)
  '(js2-indent-switch-body t)
@@ -33,7 +33,7 @@
  '(nyan-bar-length 25)
  '(package-selected-packages
    (quote
-    (counsel-bbdb ivy-gitlab gitlab counsel swiper ivy package-build shut-up epl git commander f dash s)))
+    (alchemist counsel-bbdb elixir-mode ivy-gitlab gitlab counsel swiper ivy package-build shut-up epl git commander f dash s)))
  '(py-python-command "python")
  '(py-shell-name "python3")
  '(python-indent-offset 4)
@@ -64,6 +64,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#181818" :foreground "#f9f9ff" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
+ '(avy-lead-face ((t (:background "dark slate blue" :foreground "white"))))
+ '(avy-lead-face-0 ((t (:background "firebrick" :foreground "white"))))
  '(comint-highlight-prompt ((((min-colors 88) (background dark)) (:foreground "Red3"))))
  '(company-preview ((t (:background "red"))))
  '(company-preview-common ((t (:background "gray16"))))
