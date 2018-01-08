@@ -43,6 +43,6 @@ class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
 }
 
 const `(buffer-file-name/no-extension)`Container = connect<{}, IDispatchProps, {}>
-  (null, mapDispatch)(`(buffer-file-name/no-extension)`);
+  (null, mapDispatch)(i18nConnect(`(buffer-file-name/no-extension)`));
 
-export default i18nConnect(`(buffer-file-name/no-extension)`Container);
+export default `(buffer-file-name/no-extension)`Container;
