@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ss-state
+# key: ss-state
+# --
+const { $0 } = this.state;
