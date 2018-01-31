@@ -20,16 +20,16 @@ import './`(buffer-file-name/no-extension)`.scss';
 interface IStateProps {
 }
 
-interface IDispatchProps {
+interface IActionProps {
 }
 
 interface IOwnProps {
 }
 
-type IProps = IStateProps & IDispatchProps & InjectedFormProps<$2, IOwnProps> & IOwnProps;
+type IProps = IStateProps & IActionProps & InjectedFormProps<$2, IOwnProps> & IOwnProps;
 
 
-function mapDispatch(dispatch: Dispatch<any>): IDispatchProps {
+function mapDispatch(dispatch: Dispatch<any>): IActionProps {
   return bindActionCreators(actions, dispatch);
 }
 
@@ -54,7 +54,7 @@ class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
   }
 }
 
-const `(buffer-file-name/no-extension)`Container = connect<IStateProps, IDispatchProps, {}>
+const `(buffer-file-name/no-extension)`Container = connect<IStateProps, IActionProps, {}>
   (mapState, mapDispatch)(`(buffer-file-name/no-extension)`);
 
 const withConnectedForm = reduxForm({ form: formName })(`(buffer-file-name/no-extension)`Container);

@@ -14,12 +14,12 @@ import './`(buffer-file-name/no-extension)`.scss';
 // interface IStateProps {
 // }
 
-interface IDispatchProps {
+interface IActionProps {
 }
 
-type IProps = IDispatchProps;
+type IProps = IActionProps;
 
-function mapDispatch(dispatch: Dispatch<any>): IDispatchProps {
+function mapDispatch(dispatch: Dispatch<any>): IActionProps {
   return bindActionCreators(actions, dispatch);
 }
 
@@ -40,7 +40,7 @@ class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
   }
 }
 
-const `(buffer-file-name/no-extension)`Container = connect<{}, IDispatchProps, {}>
+const `(buffer-file-name/no-extension)`Container = connect<{}, IActionProps, {}>
   (null, mapDispatch)(`(buffer-file-name/no-extension)`);
 
 export default `(buffer-file-name/no-extension)`Container;
