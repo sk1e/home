@@ -3,7 +3,7 @@
 # key: sscomp-i18n
 # --
 import * as React from 'react';
-import block = require('bem-cn');
+import * as block from 'bem-cn';
 
 import './`(buffer-file-name/no-extension)`.scss';
 

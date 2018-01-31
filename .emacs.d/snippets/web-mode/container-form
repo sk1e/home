@@ -3,7 +3,7 @@
 # key: sscont-form
 # --
 import * as React from 'react';
-import block = require('bem-cn');
+import * as block from 'bem-cn';
 import { connect, Dispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Field, reduxForm, InjectedFormProps, WrappedFieldProps } from 'redux-form';
