@@ -3,7 +3,7 @@
 # key: sscont
 # --
 import * as React from 'react';
-import * as block from 'bem-cn';
+import block from 'bem-cn';
 import { connect, Dispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
