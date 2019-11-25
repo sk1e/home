@@ -3,7 +3,7 @@
 # key: sscomm-ac
 # --
 
-export const { execute: ${1:$(s-lower-camel-case yas-text)}, completed: ${1:$(s-lower-camel-case yas-text)}Completed, failed: ${1:$(s-lower-camel-case yas-text)}Failed } =
-  makeCommunicationActionCreators<NS.I${1:ActionName}, NS.I$1Completed, NS.I$1Failed>(
-    '${1:$(yas:get-action-type yas-text)}', '${1:$(yas:get-action-type yas-text)}_COMPLETED', '${1:$(yas:get-action-type yas-text)}_FAILED',
+export const { execute: ${1:$(s-lower-camel-case yas-text)}, completed: ${1:$(s-lower-camel-case yas-text)}Success, failed: ${1:$(s-lower-camel-case yas-text)}Fail } =
+  makeCommunicationActionCreators<TS.I${1:ActionName}, TS.I$1Success, TS.I$1Fail>(
+    '${1:$(yas:get-action-type yas-text)}', '${1:$(yas:get-action-type yas-text)}_SUCCESS', '${1:$(yas:get-action-type yas-text)}_FAIL',
   );

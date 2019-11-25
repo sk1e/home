@@ -3,9 +3,9 @@
 # key: sscomm-reducer
 # --
 
-${1:$(s-lower-camel-case yas-text)}: makeCommunicationReducer<NS.I${1:ActionName}, NS.I$1Completed, NS.I$1Failed>(
+${1:$(s-lower-camel-case yas-text)}: makeCommunicationReducer<TS.I${1:ActionName}, TS.I$1Success, TS.I$1Fail>(
   '${1:$(yas:get-action-type yas-text)}',
-  '${1:$(yas:get-action-type yas-text)}_COMPLETED',
-  '${1:$(yas:get-action-type yas-text)}_FAILED',
+  '${1:$(yas:get-action-type yas-text)}_SUCCESS',
+  '${1:$(yas:get-action-type yas-text)}_FAIL',
   initial.communication.${1:$(s-lower-camel-case yas-text)},
 ),
