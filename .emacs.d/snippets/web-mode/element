@@ -3,6 +3,6 @@
 # key: ss-element
 # binding: s-e
 # --
-<${1:div} ${2:className={b('${3:element}')()}}>
+<${1:div} ${2:className={b('${3:element}')}}>
   $0
 </$1>
