@@ -4,33 +4,28 @@
 # --
 import * as React from 'react';
 import block from 'bem-cn';
-import { connect, Dispatch } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
-// import { IAppReduxState } from 'shared/types/app';
-import { actions } from '../../../redux';
-import './`(buffer-file-name/no-extension)`.scss';
+import { IAppReduxState } from 'shared/types/app';
 
-// interface IStateProps {
-// }
+import { actionCreators, selectors } from '../../../redux';
+import './style.scss';
 
-interface IActionProps {
+type StateProps = {
 }
 
-type IProps = IActionProps;
+type ActionProps = typeof containerActionCreators;
 
-function mapDispatch(dispatch: Dispatch<any>): IActionProps {
-  return bindActionCreators(actions, dispatch);
+type Props = StateProps & ActionProps;
+
+function mapState(state: IAppReduxState): StateProps {
+  return {
+  };
 }
 
-// function mapState(state: IAppReduxState): IStateProps {
-//  return {
-//  };
-// }
+const b = block('`(camel-case->lisp-case (containing-directory))`');
 
-const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`');
-
-class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
+class `(containing-directory)`Component extends React.PureComponent<Props> {
   public render() {
     return (
       <div className={b()}>
@@ -40,7 +35,10 @@ class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
   }
 }
 
-const `(buffer-file-name/no-extension)`Container = connect<{}, IActionProps, {}>
-  (null, mapDispatch)(`(buffer-file-name/no-extension)`);
+const containerActionCreators = {
+}
 
-export default `(buffer-file-name/no-extension)`Container;
+export const `(containing-directory)` = (
+  connect(mapState, containerActionCreators)(
+    `(containing-directory)`Component
+  ));

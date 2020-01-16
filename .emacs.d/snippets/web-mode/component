@@ -5,14 +5,14 @@
 import * as React from 'react';
 import block from 'bem-cn';
 
-import './`(buffer-file-name/no-extension)`.scss';
+import './style.scss';
 
-interface IProps {
+type Props = {
 }
 
-const b = block('`(camel-case->lisp-case (buffer-file-name/no-extension))`');
+const b = block('`(camel-case->lisp-case (containing-directory))`');
 
-class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
+class `(containing-directory)` extends React.PureComponent<Props> {
   public render() {
     return (
       <div className={b()}>
@@ -22,4 +22,4 @@ class `(buffer-file-name/no-extension)` extends React.PureComponent<IProps> {
   }
 }
 
-export default `(buffer-file-name/no-extension)`;
+export { `(containing-directory)` };
