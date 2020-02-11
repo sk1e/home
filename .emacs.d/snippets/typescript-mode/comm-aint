@@ -4,6 +4,6 @@
 
 # --
 
-export type I${1:ActionName} = I${2:Plain}Action<'${1:$(yas:get-action-type yas-text)}'${3:, ${4:PayloadType}}>;
-export type I$1Success = I${5:Plain}Action<'${1:$(yas:get-action-type yas-text)}_SUCCESS'${6:, ${7:PayloadType}}>;
-export type I$1Fail = IPlainFailAction<'${1:$(yas:get-action-type yas-text)}_FAIL'>;
+export type ${1:ActionName} = ${2:Plain}Action<'${1:$(yas:get-action-type yas-text)}'${3:, ${4:PayloadType}}>;
+export type $1Success = ${5:Plain}Action<'${1:$(yas:get-action-type yas-text)}_SUCCESS'${6:, ${7:PayloadType}}>;
+export type $1Fail = PlainFailAction<'${1:$(yas:get-action-type yas-text)}_FAIL'>;

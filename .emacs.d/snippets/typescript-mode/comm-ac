@@ -4,6 +4,6 @@
 # --
 
 export const { execute: ${1:$(s-lower-camel-case yas-text)}, completed: ${1:$(s-lower-camel-case yas-text)}Success, failed: ${1:$(s-lower-camel-case yas-text)}Fail } =
-  makeCommunicationActionCreators<TS.I${1:ActionName}, TS.I$1Success, TS.I$1Fail>(
+  makeCommunicationActionCreators<A.${1:ActionName}, A.$1Success, A.$1Fail>(
     '${1:$(yas:get-action-type yas-text)}', '${1:$(yas:get-action-type yas-text)}_SUCCESS', '${1:$(yas:get-action-type yas-text)}_FAIL',
   );
