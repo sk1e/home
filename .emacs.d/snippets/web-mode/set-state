@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: ss-set-state
-# key: ss-set-state
-# --
-this.setState(() => ({$0}));

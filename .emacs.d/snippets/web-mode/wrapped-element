@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: ss-wrapped-element
-# key: ss-wrapped-element
-# binding: s-w
-# --
-<${1:div} ${2:className={b('${3:element}')}}>
-  `yas-selected-text`
-</$1>

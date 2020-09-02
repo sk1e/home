@@ -7,6 +7,8 @@
 !.goldendict
 !.goldendict/*
 !.emacs.d
+!.doom.d
+!.doom.d/*
 !.emacs.d/Cask
 !.emacs.d/snippets
 !.emacs.d/snippets/web-mode
