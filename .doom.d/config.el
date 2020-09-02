@@ -75,3 +75,7 @@
     (mapc (lambda (key) (define-key space-map (kbd key) (project-utils:make-node-binder key)))
             '("<f1>" "<f2>" "<f3>" "1" "2" "3" "4"))
     (define-key treemacs-mode-map (kbd "SPC") space-map)))
+
+(use-package! paren
+  :custom-face
+  (show-paren-match ((t (:background "gainsboro" :foreground "gray10")))))
