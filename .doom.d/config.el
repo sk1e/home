@@ -56,23 +56,20 @@
 (load! "./extensions/treemacs-ext")
 (load! "./custom-bindings")
 
-(advice-add 'doom/quickload-session :after #'project-utils:init-bindings-from-storage)
-
-(add-hook 'projectile-after-switch-project-hook
-          #'project-utils:init-bindings-from-storage)
-
-
-(advice-add 'doom/quickload-session :after #'project-utils:init-bindings-from-storage)
+(advice-add 'doom/quickload-session :after #'treemacs-ext:init-bindings-from-storage)
+(advice-add 'doom/quickload-session :after #'treemacs-ext:load-recent-files-storage)
 
 (use-package! projectile
   :config
   (add-hook 'projectile-after-switch-project-hook
-          #'project-utils:init-bindings-from-storage))
+            #'treemacs-ext:init-bindings-from-storage)
+  (add-hook 'projectile-after-switch-project-hook
+          #'treemacs-ext:load-recent-files-storage))
 
 (use-package! treemacs
   :config
   (let ((space-map (make-sparse-keymap)))
-    (mapc (lambda (key) (define-key space-map (kbd key) (project-utils:make-node-binder key)))
+    (mapc (lambda (key) (define-key space-map (kbd key) (treemacs-ext:make-node-binder key)))
             '("<f1>" "<f2>" "<f3>" "1" "2" "3" "4"))
     (define-key treemacs-mode-map (kbd "SPC") space-map)))
 

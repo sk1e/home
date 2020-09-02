@@ -1,7 +1,7 @@
 ;;; custom-bindings.el -*- lexical-binding: t; -*-
 
 ;;;; -*- lexical-binding: t -*-
-;;;; 
+
 ;; (require 'smerge-mode)
 ;; (require 'web-mode)
 ;; (require 'typescript-mode)
@@ -13,8 +13,6 @@
 
 (global-set-key (kbd "C-,") #'(lambda () (interactive) (scroll-down 3)))
 (global-set-key (kbd "C-.") #'(lambda () (interactive) (scroll-up 3)))
-
-
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-x C-f") 'ido-find-file)
